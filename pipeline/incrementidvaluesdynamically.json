@@ -1,0 +1,34 @@
+{
+	"name": "incrementidvaluesdynamically",
+	"properties": {
+		"activities": [
+			{
+				"name": "Incrementidvaluesdinamically",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "Incrementidvaluesdinamically",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-06-05T03:17:05Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
