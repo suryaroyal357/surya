@@ -1,0 +1,30 @@
+{
+	"name": "DelimitedText48",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat('finaldata')",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@concat('200623')",
+					"type": "Expression"
+				},
+				"fileSystem": "storage"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
