@@ -14,10 +14,6 @@
 					"value": "@concat('finaldata')",
 					"type": "Expression"
 				},
-				"folderPath": {
-					"value": "@concat('200623')",
-					"type": "Expression"
-				},
 				"fileSystem": "storage"
 			},
 			"columnDelimiter": ",",
