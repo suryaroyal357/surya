@@ -1,0 +1,35 @@
+{
+	"name": "DelimitedText47",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_tblname": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat(dataset().p_tblname,'.csv')",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@concat('03/07/2023')",
+					"type": "Expression"
+				},
+				"fileSystem": "surya"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
