@@ -1,0 +1,9 @@
+{
+	"name": "suryaadf123",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "32776aea-b7d5-4901-8fd2-d986460cf31a",
+		"tenantId": "b3295054-baad-49dc-abc2-b1ea4948cb3b"
+	}
+}
